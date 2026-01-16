@@ -349,7 +349,7 @@ export const portfolioData = {
     email: "helnabawy@icloud.com",
     socials: [
       { name: "GitHub", href: "https://github.com/helnabawy", icon: "Github" },
-      { name: "LinkedIn", href: "https://www.linkedin.com/in/helnabawy", icon: "Linkedin" },
+      { name: "LinkedIn", href: "https://www.linkedin.com/in/hosam1696", icon: "Linkedin" },
       { name: "Email", href: "mailto:helnabawy@icloud.com", icon: "Mail" },
     ],
   },
