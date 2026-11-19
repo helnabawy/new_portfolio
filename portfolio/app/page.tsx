@@ -1,21 +1,30 @@
-import { Hero } from "@/components/sections/Hero";
-import { ValueProp } from "@/components/sections/ValueProp";
-import { About } from "@/components/sections/About";
-import { Skills } from "@/components/sections/Skills";
-import { Projects } from "@/components/sections/Projects";
-import { Contact } from "@/components/sections/Contact";
-import { Footer } from "@/components/sections/Footer";
+import { TopBar } from "@/components/store/TopBar";
+import { Identity } from "@/components/store/Identity";
+import { Previews } from "@/components/store/Previews";
+import { Experience } from "@/components/store/Experience";
+import { Scale } from "@/components/store/Scale";
+import { Projects } from "@/components/store/Projects";
+import { Stack } from "@/components/store/Stack";
+import { About, Contact } from "@/components/store/Contact";
 
 export default function Home() {
+  // Resolved once at build time, so the timeline's open-ended bar reaches the build date.
+  const today = new Date();
+  const now = today.getFullYear() + today.getMonth() / 12;
+
   return (
-    <div className="flex flex-col gap-0">
-      <Hero />
-      <ValueProp />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <TopBar />
+      <main className="mx-auto max-w-[1104px] overflow-x-clip px-5 md:px-8">
+        <Identity />
+        <Previews />
+        <About />
+        <Experience now={now} />
+        <Scale />
+        <Projects />
+        <Stack />
+      </main>
+      <Contact year={today.getFullYear()} />
+    </>
   );
 }

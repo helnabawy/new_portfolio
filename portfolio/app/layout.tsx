@@ -1,30 +1,23 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/layout/Navbar";
-import { CustomCursor } from "@/components/ui/CustomCursor";
 
-const inter = Inter({ subsets: ["latin"] });
+const hanken = Hanken_Grotesk({ subsets: ["latin"], variable: "--font-hanken", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Hosam Elnabawy | Senior Software Engineer",
-  description: "Senior Software Engineer specializing in iOS, Android, and cross-platform mobile development.",
+  title: "Hosam Elnabawy | Senior Mobile Engineer",
+  description:
+    "Senior Mobile Engineer with over 5 years of experience across iOS, Android and Flutter. Built Najiz for the Ministry of Justice KSA, serving over 4 million users.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-zinc-950 text-zinc-200 antialiased min-h-screen flex flex-col`}>
-        <CustomCursor />
-        <Navbar />
-        <main className="flex-grow pt-20">
-          {children}
-        </main>
-      </body>
+    <html lang="en" className={hanken.variable}>
+      <body className="font-sans">{children}</body>
     </html>
   );
 }

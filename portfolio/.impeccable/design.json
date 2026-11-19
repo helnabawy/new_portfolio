@@ -1,0 +1,497 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-19T17:03:10.193283+00:00",
+  "title": "Design System: Hosam Elnabawy, Senior Mobile Engineer",
+  "extensions": {
+    "colorMeta": {
+      "store-blue": {
+        "role": "primary",
+        "displayName": "Store Blue",
+        "canonical": "#0a66ff",
+        "tonalRamp": [
+          "#001d4c",
+          "#00348a",
+          "#004bc7",
+          "#0563ff",
+          "#4289ff",
+          "#80afff",
+          "#b8d2ff",
+          "#e5efff"
+        ]
+      },
+      "store-blue-press": {
+        "role": "primary",
+        "displayName": "Pressed Blue",
+        "canonical": "#0852cc",
+        "tonalRamp": [
+          "#031e4a",
+          "#053585",
+          "#084dbf",
+          "#0f66f6",
+          "#498bf8",
+          "#84b1fa",
+          "#bad3fc",
+          "#e6effe"
+        ]
+      },
+      "tile-green": {
+        "role": "tertiary",
+        "displayName": "Tile Green",
+        "canonical": "#0b6b4f",
+        "tonalRamp": [
+          "#074533",
+          "#0d7d5c",
+          "#13b485",
+          "#1ce8ac",
+          "#54edc1",
+          "#8bf3d5",
+          "#bef8e7",
+          "#e8fdf7"
+        ]
+      },
+      "tile-orange": {
+        "role": "tertiary",
+        "displayName": "Tile Orange",
+        "canonical": "#c2410c",
+        "tonalRamp": [
+          "#481804",
+          "#822b08",
+          "#bb3f0c",
+          "#f05414",
+          "#f47e4d",
+          "#f8a887",
+          "#fbcebc",
+          "#feeee7"
+        ]
+      },
+      "tile-teal": {
+        "role": "tertiary",
+        "displayName": "Tile Teal",
+        "canonical": "#0e7490",
+        "tonalRamp": [
+          "#073846",
+          "#0c657d",
+          "#1292b5",
+          "#1bbde9",
+          "#53cdee",
+          "#8bddf4",
+          "#beecf9",
+          "#e8f8fd"
+        ]
+      },
+      "tile-cobalt": {
+        "role": "tertiary",
+        "displayName": "Tile Cobalt",
+        "canonical": "#1556b0",
+        "tonalRamp": [
+          "#082144",
+          "#0f3c7b",
+          "#1557b2",
+          "#2072e4",
+          "#5695eb",
+          "#8db7f1",
+          "#bfd7f7",
+          "#e8f1fc"
+        ]
+      },
+      "tile-violet": {
+        "role": "tertiary",
+        "displayName": "Tile Violet",
+        "canonical": "#6d28d9",
+        "tonalRamp": [
+          "#200b41",
+          "#3a1575",
+          "#541ea9",
+          "#6f2bd9",
+          "#925fe3",
+          "#b593ec",
+          "#d6c2f4",
+          "#f0e9fb"
+        ]
+      },
+      "tile-magenta": {
+        "role": "tertiary",
+        "displayName": "Tile Magenta",
+        "canonical": "#b5175a",
+        "tonalRamp": [
+          "#440922",
+          "#7a103d",
+          "#b01658",
+          "#e32173",
+          "#ea5896",
+          "#f18eb8",
+          "#f7c0d7",
+          "#fce8f1"
+        ]
+      },
+      "tile-ochre": {
+        "role": "tertiary",
+        "displayName": "Tile Ochre",
+        "canonical": "#a16207",
+        "tonalRamp": [
+          "#492d03",
+          "#845006",
+          "#bf7408",
+          "#f59710",
+          "#f7b04a",
+          "#faca85",
+          "#fce1bb",
+          "#fef4e7"
+        ]
+      },
+      "tile-red": {
+        "role": "tertiary",
+        "displayName": "Tile Red",
+        "canonical": "#b91c1c",
+        "tonalRamp": [
+          "#420a0a",
+          "#781212",
+          "#ad1a1a",
+          "#de2626",
+          "#e65b5b",
+          "#ee9090",
+          "#f6c1c1",
+          "#fce9e9"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111114",
+        "tonalRamp": [
+          "#232329",
+          "#3f3f4a",
+          "#5b5b6c",
+          "#78788c",
+          "#9999a8",
+          "#babac4",
+          "#d8d8de",
+          "#f1f1f3"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#4a4a52",
+        "tonalRamp": [
+          "#242428",
+          "#414148",
+          "#5e5e69",
+          "#7c7c88",
+          "#9c9ca5",
+          "#bcbcc3",
+          "#d9d9dd",
+          "#f2f2f3"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#6b6b73",
+        "tonalRamp": [
+          "#252528",
+          "#424247",
+          "#606067",
+          "#7e7e87",
+          "#9d9da4",
+          "#bdbdc2",
+          "#dadadd",
+          "#f2f2f3"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#454545",
+          "#636363",
+          "#828282",
+          "#a1a1a1",
+          "#bfbfbf",
+          "#dbdbdb",
+          "#f2f2f2"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field",
+        "canonical": "#f2f2f7",
+        "tonalRamp": [
+          "#1d1d2f",
+          "#343455",
+          "#4c4c7b",
+          "#6464a0",
+          "#8a8ab7",
+          "#b0b0ce",
+          "#d3d3e4",
+          "#efeff5"
+        ]
+      },
+      "field-hover": {
+        "role": "neutral",
+        "displayName": "Field Hover",
+        "canonical": "#e6e6ee",
+        "tonalRamp": [
+          "#1f1f2e",
+          "#383852",
+          "#515176",
+          "#6a6a9a",
+          "#8f8fb3",
+          "#b3b3cb",
+          "#d4d4e2",
+          "#f0f0f5"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#d8d8de",
+        "tonalRamp": [
+          "#232329",
+          "#3f3f4b",
+          "#5b5b6c",
+          "#78788c",
+          "#9999a9",
+          "#babac5",
+          "#d8d8de",
+          "#f1f1f3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name beside the identity icon (30px mobile) and the footer question (52px / 34px)."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Hero numbers inside preview panels; fact strip numerals at 38px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles; 26px on mobile."
+      },
+      "panel-title": {
+        "displayName": "Panel Title",
+        "purpose": "The claim at the top of each preview panel."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project names, version-history entries, row headers."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "About prose, max 66ch."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Descriptions and notes in ink-2, near 70ch."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Figure and panel captions, fact notes, tech lists."
+      },
+      "label": {
+        "displayName": "Data Label",
+        "purpose": "Uppercase labels for data cells only; never above a section heading."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shell-lift",
+        "value": "0 14px 30px -18px rgba(17,17,20,0.35)",
+        "purpose": "The only shadow: under the white app shell inside the micro-apps preview panel."
+      },
+      {
+        "name": "bar-blur",
+        "value": "backdrop-filter: blur(24px); background: rgba(255,255,255,0.8)",
+        "purpose": "Sticky top bar translucency."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Things that draw or fade: bars, columns, rise, colour changes, count-ups."
+      },
+      {
+        "name": "ease-spring",
+        "value": "cubic-bezier(0.3, 1.2, 0.5, 1)",
+        "purpose": "Things that arrive: icon launch, dot and tile pops, pill press, icon hover tilt."
+      },
+      {
+        "name": "launch",
+        "value": "900ms ease-spring; from scale(0.72), blur(6px), opacity 0",
+        "purpose": "Identity icon entrance; 500ms for the sticky bar pill."
+      },
+      {
+        "name": "rise",
+        "value": "800ms ease-expo; from translateY(14px), opacity 0; stagger 70ms + 120ms",
+        "purpose": "Header text entrance, staggered by --i."
+      },
+      {
+        "name": "figure-draw",
+        "value": "600-1100ms; stagger via --i * --step",
+        "purpose": "Figures animate when data-on flips true; data-on starts true so no-JS and reduced-motion visitors see final state; untriggered state stays visible (opacity 0.18-0.25, bars at 6-8%)."
+      },
+      {
+        "name": "count-up",
+        "value": "1.6s ease-expo, 0.35s delay",
+        "purpose": "Fact strip numerals count from zero."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.96), 250ms ease-spring",
+        "purpose": "Pill active state."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "768px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Pill",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action: store-blue pill for Contact.",
+      "html": "<a class=\"ds-pill ds-pill-blue\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg> Contact</a>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;font-family:var(--font-sans,'Hanken Grotesk',system-ui,sans-serif);font-weight:700;white-space:nowrap;cursor:pointer;transition:transform 250ms cubic-bezier(0.3,1.2,0.5,1),background-color 200ms cubic-bezier(0.16,1,0.3,1);} .ds-pill:active{transform:scale(0.96);} .ds-pill:focus-visible{outline:2px solid #0a66ff;outline-offset:3px;} .ds-pill-blue{height:46px;padding:0 32px;font-size:17px;background:#0a66ff;color:#fff;text-decoration:none;} .ds-pill-blue:hover{background:#0852cc;}"
+    },
+    {
+      "name": "Secondary Pill",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Grey pill with pressed-blue text, beside the primary (Download CV).",
+      "html": "<a class=\"ds-pill ds-pill-grey\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/><path d=\"M12 15V3\"/></svg> Download CV</a>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;font-family:var(--font-sans,'Hanken Grotesk',system-ui,sans-serif);font-weight:700;white-space:nowrap;cursor:pointer;transition:transform 250ms cubic-bezier(0.3,1.2,0.5,1),background-color 200ms cubic-bezier(0.16,1,0.3,1);} .ds-pill:active{transform:scale(0.96);} .ds-pill:focus-visible{outline:2px solid #0a66ff;outline-offset:3px;} .ds-pill-grey{height:46px;padding:0 24px;font-size:17px;background:#f2f2f7;color:#0852cc;text-decoration:none;} .ds-pill-grey:hover{background:#e6e6ee;}"
+    },
+    {
+      "name": "Icon Pill",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "36px round grey stepper for the preview gallery.",
+      "html": "<button class=\"ds-pill ds-pill-icon\" type=\"button\" aria-label=\"Next previews\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></button>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;font-family:var(--font-sans,'Hanken Grotesk',system-ui,sans-serif);font-weight:700;white-space:nowrap;cursor:pointer;transition:transform 250ms cubic-bezier(0.3,1.2,0.5,1),background-color 200ms cubic-bezier(0.16,1,0.3,1);} .ds-pill:active{transform:scale(0.96);} .ds-pill:focus-visible{outline:2px solid #0a66ff;outline-offset:3px;} .ds-pill-icon{width:36px;height:36px;padding:0;background:#f2f2f7;color:#0852cc;} .ds-pill-icon:hover{background:#e6e6ee;}"
+    },
+    {
+      "name": "Chips",
+      "kind": "chip",
+      "refersTo": "chip-metric",
+      "description": "Current marker in blue; metric chip in grey with tabular pressed-blue text.",
+      "html": "<div class=\"ds-chips\"><span class=\"ds-chip-current\">Current</span><span class=\"ds-chip-metric\">4M+ users</span></div>",
+      "css": ".ds-chips{display:flex;gap:12px;align-items:center;font-family:'Hanken Grotesk',system-ui,sans-serif;} .ds-chip-current{border-radius:999px;background:#0a66ff;color:#fff;padding:4px 10px;font-size:11px;line-height:1;font-weight:700;} .ds-chip-metric{border-radius:999px;background:#f2f2f7;color:#0852cc;padding:6px 12px;font-size:13px;line-height:1;font-weight:700;font-variant-numeric:tabular-nums;}"
+    },
+    {
+      "name": "Sticky Top Bar",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Translucent bar; gains monogram, name and compact Contact once the header scrolls away.",
+      "html": "<header class=\"ds-bar\"><a class=\"ds-bar-id\" href=\"#\"><span class=\"ds-bar-icon\">HE</span><span>Hosam Elnabawy</span></a><nav class=\"ds-bar-nav\"><a href=\"#\">Preview</a><a href=\"#\">Experience</a><a href=\"#\">Projects</a><a href=\"#\">Stack</a></nav><a class=\"ds-bar-cta\" href=\"#\">Contact</a></header>",
+      "css": ".ds-bar{display:flex;align-items:center;gap:24px;height:56px;padding:0 32px;background:rgba(255,255,255,0.8);backdrop-filter:blur(24px);border-bottom:1px solid #d8d8de;font-family:'Hanken Grotesk',system-ui,sans-serif;color:#111114;} .ds-bar-id{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:inherit;text-decoration:none;} .ds-bar-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:22.5%;background:#0a66ff;color:#fff;font-size:13px;font-weight:700;} .ds-bar-nav{margin-left:auto;display:flex;gap:28px;} .ds-bar-nav a{font-size:14px;font-weight:500;color:#4a4a52;text-decoration:none;transition:color 200ms;} .ds-bar-nav a:hover{color:#111114;} .ds-bar-nav a:focus-visible,.ds-bar-cta:focus-visible{outline:2px solid #0a66ff;outline-offset:3px;border-radius:8px;} .ds-bar-cta{display:inline-flex;align-items:center;height:32px;padding:0 16px;border-radius:999px;background:#0a66ff;color:#fff;font-size:14px;font-weight:700;text-decoration:none;transition:background-color 200ms cubic-bezier(0.16,1,0.3,1);} .ds-bar-cta:hover{background:#0852cc;}"
+    },
+    {
+      "name": "Fact Strip",
+      "kind": "custom",
+      "description": "Five hairline-divided cells: uppercase data label, counted tabular numeral, note.",
+      "html": "<dl class=\"ds-facts\"><div><dt>Experience</dt><dd class=\"ds-n\">5+</dd><dd class=\"ds-note\">years</dd></div><div><dt>Reach</dt><dd class=\"ds-n\">4M+</dd><dd class=\"ds-note\">users on Najiz</dd></div><div><dt>Platforms</dt><dd class=\"ds-n ds-t\">iOS · Android</dd><dd class=\"ds-note\">and Flutter</dd></div></dl>",
+      "css": ".ds-facts{display:grid;grid-template-columns:repeat(3,1fr);margin:0;padding:22px 0;border-top:1px solid #d8d8de;border-bottom:1px solid #d8d8de;font-family:'Hanken Grotesk',system-ui,sans-serif;} .ds-facts>div{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 16px;} .ds-facts>div+div{border-left:1px solid #d8d8de;} .ds-facts dt{font-size:11px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:#6b6b73;} .ds-facts dd{margin:0;} .ds-n{margin-top:4px;height:48px;display:flex;align-items:center;font-size:38px;line-height:1;font-weight:800;letter-spacing:-0.02em;color:#4a4a52;font-variant-numeric:tabular-nums;} .ds-t{font-size:21px;letter-spacing:-0.01em;} .ds-note{margin-top:4px;font-size:13px;color:#6b6b73;}"
+    },
+    {
+      "name": "Preview Panel",
+      "kind": "card",
+      "refersTo": "preview-panel",
+      "description": "Tall full-colour panel: claim, demonstrated figure, caption.",
+      "html": "<article class=\"ds-panel\"><h3>Over 4 million people can meet a judge from their phone.</h3><div class=\"ds-panel-fig\"><p class=\"ds-panel-n\">4M+</p><div class=\"ds-dots\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><p class=\"ds-panel-cap\">Najiz, Ministry of Justice KSA. Each dot is 100,000 users.</p></article>",
+      "css": ".ds-panel{display:flex;flex-direction:column;width:272px;height:520px;padding:24px;border-radius:32px;background:#0a66ff;color:#fff;font-family:'Hanken Grotesk',system-ui,sans-serif;box-sizing:border-box;} .ds-panel h3{margin:0;font-size:22px;line-height:1.14;font-weight:800;letter-spacing:-0.02em;} .ds-panel-fig{flex:1;display:flex;flex-direction:column;justify-content:center;} .ds-panel-n{margin:0 0 20px;font-size:76px;line-height:1;font-weight:800;letter-spacing:-0.04em;font-variant-numeric:tabular-nums;} .ds-dots{display:grid;grid-template-columns:repeat(8,1fr);gap:9px;} .ds-dots span{aspect-ratio:1;border-radius:50%;background:#fff;transition:transform 600ms cubic-bezier(0.3,1.2,0.5,1);} .ds-panel:hover .ds-dots span{transform:scale(1.08);} .ds-panel-cap{margin:0;font-size:13px;line-height:1.375;font-weight:500;}"
+    },
+    {
+      "name": "App Row",
+      "kind": "custom",
+      "refersTo": "app-icon",
+      "description": "Project listing: tile-colour squircle icon, title, meta, metric chip, description, tech.",
+      "html": "<div class=\"ds-app\"><span class=\"ds-app-icon\"><svg width=\"30\" height=\"30\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M16 10a4 4 0 0 1-8 0\"/><path d=\"M3.103 6.034h17.794\"/><path d=\"M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z\"/></svg></span><div class=\"ds-app-body\"><div class=\"ds-app-head\"><div><h3>Sahl</h3><p class=\"ds-app-meta\">Payments app · Client work</p></div><span class=\"ds-app-metric\">+40%</span></div><p class=\"ds-app-desc\">NFC payments made faster by modularising the code architecture.</p><p class=\"ds-app-tech\">Kotlin · Jetpack Compose · NFC</p></div></div>",
+      "css": ".ds-app{display:flex;gap:16px;padding:24px 0;border-bottom:1px solid #d8d8de;font-family:'Hanken Grotesk',system-ui,sans-serif;color:#111114;max-width:480px;} .ds-app-icon{display:grid;place-items:center;flex-shrink:0;width:64px;height:64px;border-radius:22.5%;background:#0b6b4f;color:#fff;transition:transform 500ms cubic-bezier(0.3,1.2,0.5,1);} .ds-app:hover .ds-app-icon{transform:scale(1.06) rotate(-3deg);} .ds-app-body{flex:1;min-width:0;} .ds-app-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;} .ds-app h3{margin:0;font-size:17px;line-height:1.25;font-weight:700;} .ds-app-meta{margin:2px 0 0;font-size:14px;color:#6b6b73;} .ds-app-metric{border-radius:999px;background:#f2f2f7;color:#0852cc;padding:6px 12px;font-size:13px;line-height:1;font-weight:700;font-variant-numeric:tabular-nums;} .ds-app-desc{margin:10px 0 0;font-size:15px;line-height:1.625;color:#4a4a52;} .ds-app-tech{margin:10px 0 0;font-size:13px;line-height:1.375;color:#6b6b73;}"
+    },
+    {
+      "name": "Information Rows",
+      "kind": "custom",
+      "description": "Hairline-ruled label/value rows with store-blue links.",
+      "html": "<dl class=\"ds-info\"><div><dt>Email</dt><dd><a href=\"#\">hello@example.com</a></dd></div><div><dt>Languages</dt><dd>Arabic, English</dd></div></dl>",
+      "css": ".ds-info{margin:0;font-family:'Hanken Grotesk',system-ui,sans-serif;max-width:560px;} .ds-info>div{display:grid;grid-template-columns:220px 1fr;gap:24px;padding:14px 0;border-bottom:1px solid #d8d8de;} .ds-info dt{font-size:15px;color:#6b6b73;} .ds-info dd{margin:0;font-size:16px;line-height:1.625;font-weight:500;color:#111114;} .ds-info a{color:#0a66ff;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:0.22em;text-decoration-thickness:1.5px;transition:text-decoration-color 200ms cubic-bezier(0.16,1,0.3,1);} .ds-info a:hover{text-decoration-color:currentColor;} .ds-info a:focus-visible{outline:2px solid #0a66ff;outline-offset:3px;border-radius:8px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Store Listing",
+    "overview": "The page is an app store product page for a person. A white ground carries grouped grey fields, near-black ink and a single store blue that marks every action. Identity reads the way an app does: a large flat-colour squircle icon, a heavy name, a subtitle, and a pill to act on. Evidence sits in a divided fact strip, a sideways gallery of tall full-colour preview panels, hairline-ruled information rows and a version history.\n\nDensity is calm and listing-like: one centred column, generous section breaks marked by a single hairline, and colour reserved for icons, panels and the one action blue. Depth is tonal (white over grey), not shadowed. Motion follows two curves only, a spring for things that arrive and an exponential ease-out for things that draw, and every animated figure starts from a visible default so nothing is ever blank without JavaScript or with reduced motion.\n\nThe world refuses the dark developer portfolio of a centred hero, glow and equal cards.",
+    "keyCharacteristics": [
+      "White ground, grey #f2f2f7 grouped fields, near-black ink, one store blue for actions.",
+      "Flat-colour squircle icons; pill buttons; tall rounded preview panels as full colour fields.",
+      "Hairline-ruled rows and a divided fact strip carry facts, not cards.",
+      "One grotesk (Hanken Grotesk) in extra-bold and regular, tabular numerals for every figure.",
+      "Spring and exponential ease-out motion; figures draw from a visible default."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "Store blue means \"act here\". Nothing decorative, no second accent hue for actions; the tile colours never carry a button.",
+        "section": "colors"
+      },
+      {
+        "name": "The Press Blue On Grey Rule",
+        "body": "Blue text or glyphs on a field-grey surface use pressed blue, not store blue; store blue on #f2f2f7 falls below 4.5:1.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tile Ownership Rule",
+        "body": "A tile colour belongs to one project. Its icon, its stack dots and its panel use the same fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Every number that can change or be compared (counts, years, periods, metrics, ticks) is set with tabular numerals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Data Label Rule",
+        "body": "Uppercase 11px labels name a datum directly beneath or beside them. They never sit above a section heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline Section Rule",
+        "body": "A section begins with a single rule hairline and space, never with a background band or a card.",
+        "section": "layout"
+      },
+      {
+        "name": "The Tonal Depth Rule",
+        "body": "Lift a surface by changing its tone (white on grey, grey on white), not by adding a shadow.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Squircle Means Icon Rule",
+        "body": "Only an icon is a squircle; a squircle is never a button or a card.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** keep every action a pill in store blue or a grey/white pill with pressed-blue text.",
+      "**Do** use pressed blue for blue text on any field-grey surface.",
+      "**Do** give each project one tile colour and reuse it for its icon, panel and stack dots.",
+      "**Do** set every compared or changing number with tabular numerals.",
+      "**Do** start every animated figure from a visible default and finish it with the spring or the exponential ease-out (`--ease-spring`, `--ease-expo`); honour reduced motion by showing the final state.",
+      "**Do** separate sections and rows with 1px rule hairlines."
+    ],
+    "donts": [
+      "**Don't** add a second action colour or use a tile colour on a button.",
+      "**Don't** shape a button or card as a squircle; squircles are icons.",
+      "**Don't** add card shadows; depth is tonal, and the shell lift is the only shadow.",
+      "**Don't** put an uppercase label above a section heading; uppercase is for data labels only.",
+      "**Don't** build a dark developer portfolio: no centred hero, no glow, no grid of equal cards."
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "title": "Choose the visual world for your portfolio",
+  "question": "The roll assigned Component Datasheet. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Component Datasheet",
+      "kicker": "THE ROLL",
+      "lineage": "semiconductor datasheets and engineering spec sheets",
+      "thesis": "Your CV published as the spec sheet of a part: features, ratings, block diagram, timing diagram, ordering information.",
+      "palette": ["#1f35e0", "#0c1233", "#eef1f6", "#ffb000"],
+      "materials": ["reversed-print cobalt cover", "keyline diagrams", "ruled tables", "tabular numerals"],
+      "viewport": "A cobalt cover sheet: your name at poster scale, a features column with the CV's real figures, and a live block diagram where signals run from iOS, Android and Flutter through to the shipped apps. 'Download datasheet' is the CV; 'Request a sample' is email.",
+      "risk": "Can read as a gimmick if the jargon outruns the content; every label needs a plain-English twin.",
+      "raised": [
+        {"from": "challenger-metro", "raise": "Figures are set at poster scale and are the interface themselves; no card chrome around a number."},
+        {"from": "challenger-cyclorama", "raise": "The sheet's ground changes in whole bands as you scroll, cobalt cover to pale paper to ink close, as one continuous transition."},
+        {"from": "challenger-darkroom", "raise": "Every diagram develops in a fixed order: keyline first, then values, then the moving signal."},
+        {"from": "challenger-breton", "raise": "Each infographic is a numbered figure with a ruled caption at its foot, so the page reads as one catalogued system."}
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "label": "Store Listing",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "App Store and Google Play product pages",
+      "thesis": "You, presented as an app listing: icon, fact strip, preview panels, version history as career, information table.",
+      "palette": ["#ffffff", "#f2f2f7", "#111114", "#0a66ff"],
+      "materials": ["rounded app icon", "fact strip with dividers", "preview panels", "information rows"],
+      "viewport": "App-icon monogram, name and title, a 'Contact' pill where 'Get' sits, then the familiar fact strip: 4M+ users, 12+ micro-apps, 60+ screens, 5+ years.",
+      "risk": "Also the direction many mobile-developer portfolios land on, and it wants real screenshots you don't have.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-metro",
+      "label": "Typographic Tiles",
+      "verdict": "competitive",
+      "lineage": "Metro design language: flat tiles and giant lowercase",
+      "thesis": "No chrome at all: giant lowercase words and flat colour tiles that flip to show your figures.",
+      "palette": ["#000000", "#00aff0", "#e3008c", "#a4c400", "#ffffff"],
+      "materials": ["flat colour tiles", "light-weight giant lowercase", "cropped headlines", "tile flips"],
+      "viewport": "'hosam elnabawy' in giant light lowercase running off the right edge, over a grid of flat tiles: a wide '4m+ users' tile, live tiles flipping between projects.",
+      "case": "Holds on clarity: tiles carry numbers well. Loses on identification: a phone design language you never shipped for.",
+      "risk": "Reads as a period piece from a platform outside your CV.",
+      "html": ".impeccable/mocks/decision/challenger-metro.html",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-metro-typographic-tiles-hero.webp"
+    },
+    {
+      "id": "challenger-cyclorama",
+      "label": "Cyclorama Dawn",
+      "verdict": "declined",
+      "lineage": "theatre lighting cyclorama",
+      "thesis": "Career as a lighting cue sequence from night to day.",
+      "palette": ["#05060a", "#1b3fb5", "#e58fa6", "#ffffff"],
+      "materials": ["horizon bands", "stencil cue caps"],
+      "viewport": "A black field with a cobalt horizon band rising behind your name.",
+      "case": "Atmosphere without evidence: recruiters need figures, not a mood.",
+      "kept": "One continuous ground transition across the scroll.",
+      "risk": "Beautiful and uninformative.",
+      "hero": "https://impeccable.style/worlds/cards/stagecraft-theater-lighting-cyclorama-dawn-hero.webp"
+    },
+    {
+      "id": "challenger-darkroom",
+      "label": "Darkroom Safelight",
+      "verdict": "declined",
+      "lineage": "photographic darkroom",
+      "thesis": "Projects develop like prints under amber light.",
+      "palette": ["#c2570a", "#1a0f08", "#b9b4ad", "#f3efe6"],
+      "materials": ["amber wash", "test strips"],
+      "viewport": "An amber field where your name emerges from a developer tray.",
+      "case": "Slow reveal fights a reader who has one minute.",
+      "kept": "Diagrams that develop in a fixed, staged order.",
+      "risk": "Hides the content behind the effect.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-darkroom-safelight-bay-hero.webp"
+    },
+    {
+      "id": "challenger-breton",
+      "label": "Ornament Plate Book",
+      "verdict": "declined",
+      "lineage": "regional pattern plate books",
+      "thesis": "Skills as repeatable ornament units on numbered plates.",
+      "palette": ["#5b6470", "#e6dfd0", "#b3312b"],
+      "materials": ["flat plate printing", "keyline units"],
+      "viewport": "A numbered plate of interlaced units with your name in a constructed alphabet.",
+      "case": "The parts-catalogue idea fits a design system, but the ornament says craft guild, not mobile engineering.",
+      "kept": "Numbered plates with ruled captions.",
+      "risk": "Reads as a heritage brand.",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-breton-ornament-program-hero.webp"
+    },
+    {
+      "id": "challenger-ink",
+      "label": "Fluid Ink Basin",
+      "verdict": "declined",
+      "lineage": "suminagashi marbling",
+      "thesis": "The page as a liquid surface the pointer stirs.",
+      "palette": ["#f5f5f2", "#1c2a5c", "#22252b", "#9aa0a8"],
+      "materials": ["marbled ink", "still margin type"],
+      "viewport": "A white basin of indigo ink with your name in the margin.",
+      "case": "A GPU toy says nothing about scale or seniority.",
+      "kept": "Diagrams that answer the pointer continuously.",
+      "risk": "Spectacle over substance.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-fluid-ink-basin-hero.webp"
+    },
+    {
+      "id": "challenger-quote",
+      "label": "Industrial Quote Grammar",
+      "verdict": "declined",
+      "lineage": "industrial streetwear labelling",
+      "thesis": "Every section labelled in quoted caps with hazard stripes.",
+      "palette": ["#ffffff", "#0a0a0a", "#ff5a00"],
+      "materials": ["hazard diagonals", "zip-tie tags"],
+      "viewport": "\"ENGINEER\" in giant quoted caps over a hazard stripe.",
+      "case": "Fashion irony undercuts the professionalism you asked for.",
+      "kept": "Labels that name things literally.",
+      "risk": "Reads as a joke to a hiring manager.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-industrial-quote-grammar-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code"},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "The dark developer portfolio: centred hero, gradient accents, cards for projects and skills, executed cleanly.",
+    "palette": ["#0b0d12", "#f4f5f7", "#3b82f6"],
+    "materials": ["dark ground", "project cards", "skill chips"],
+    "viewport": "Name and title centred on a dark ground with two buttons and a stat row beneath.",
+    "risk": "Indistinguishable from most developer portfolios by design."
+  },
+  "steer": true
+}

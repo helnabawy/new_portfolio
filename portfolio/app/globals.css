@@ -1,57 +1,230 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cyan-500: #06b6d4;
-  --color-cyan-400: #22d3ee;
-  --color-zinc-950: #09090b;
-  --color-zinc-900: #18181b;
-  --color-zinc-800: #27272a;
-  --color-zinc-700: #3f3f46;
-  --color-zinc-400: #a1a1aa;
-  --color-zinc-200: #e4e4e7;
-  --color-zinc-100: #f4f4f5;
+  --color-ink: #111114;
+  --color-ink-2: #4a4a52;
+  --color-ink-3: #6b6b73;
+  --color-field: #f2f2f7;
+  --color-rule: #d8d8de;
+  --color-blue: #0a66ff;
+  --color-blue-press: #0852cc;
+  --font-sans: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.3, 1.2, 0.5, 1);
 }
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 9, 9, 11;
-  --background-end-rgb: 24, 24, 27;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+  scrollbar-color: #c4c4cc #ffffff;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  cursor: none;
+  background: #ffffff;
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-a, button {
-  cursor: none;
+::selection {
+  background: var(--color-blue);
+  color: #ffffff;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+.on-color :focus-visible,
+.on-color:focus-visible {
+  outline-color: #ffffff;
+}
 
-  .animate-gradient {
-    background-size: 200% 200%;
-    animation: gradient 15s ease infinite;
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+.squircle {
+  border-radius: 22.5%;
+}
+
+.link {
+  color: var(--color-blue);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1.5px;
+  transition: text-decoration-color 200ms var(--ease-expo);
+}
+.link:hover {
+  text-decoration-color: currentColor;
+}
+
+@layer components {
+/* Pills: the store's one button shape */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    transform 250ms var(--ease-spring),
+    background-color 200ms var(--ease-expo);
+}
+.pill:active {
+  transform: scale(0.96);
+}
+.pill-blue {
+  background: var(--color-blue);
+  color: #ffffff;
+}
+.pill-blue:hover {
+  background: var(--color-blue-press);
+}
+.pill-grey {
+  background: var(--color-field);
+  color: var(--color-blue);
+}
+.pill-grey:hover {
+  background: #e6e6ee;
+}
+}
+
+/* Header entrance: runs without JavaScript and ends visible */
+@keyframes launch {
+  from {
+    transform: scale(0.72);
+    filter: blur(6px);
+    opacity: 0;
+  }
+}
+@keyframes rise {
+  from {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+}
+.launch {
+  animation: launch 900ms var(--ease-spring) both;
+}
+.rise {
+  animation: rise 800ms var(--ease-expo) both;
+  animation-delay: calc(var(--i, 0) * 70ms + 120ms);
+}
+
+/* Icon sheen that follows the pointer */
+.icon-sheen {
+  background-color: var(--color-blue);
+}
+@media (hover: hover) {
+  .icon-sheen:hover {
+    background-image: radial-gradient(120% 120% at var(--mx, 30%) var(--my, 20%), rgba(255, 255, 255, 0.24), transparent 55%);
+  }
+}
+
+/* Preview gallery */
+.gallery {
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 20px;
+  -webkit-overflow-scrolling: touch;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery[data-dragging="true"] {
+  scroll-snap-type: none;
+  cursor: grabbing;
+  user-select: none;
+}
+.panel {
+  scroll-snap-align: start;
+}
+
+/* Figures draw when their container switches to data-on="true".
+   Without JavaScript nothing sets data-on="false", so every figure shows its final state. */
+[data-on="false"] .fig,
+[data-on="false"] .fig-pop,
+[data-on="false"] .fig-bar,
+[data-on="false"] .fig-col {
+  transition: none !important;
+}
+.fig {
+  transition:
+    opacity 600ms var(--ease-expo),
+    transform 700ms var(--ease-expo);
+  transition-delay: calc(var(--i, 0) * var(--step, 40ms));
+}
+[data-on="false"] .fig {
+  opacity: 0.25;
+  transform: translateY(8px);
+}
+.fig-pop {
+  transition:
+    opacity 300ms var(--ease-expo),
+    transform 600ms var(--ease-spring);
+  transition-delay: calc(var(--i, 0) * var(--step, 40ms));
+}
+[data-on="false"] .fig-pop {
+  opacity: 0.18;
+  transform: scale(0.4);
+}
+.fig-bar {
+  transform-origin: left center;
+  transition: transform 1100ms var(--ease-expo);
+  transition-delay: calc(var(--i, 0) * var(--step, 90ms));
+}
+[data-on="false"] .fig-bar {
+  transform: scaleX(0.06);
+}
+.fig-col {
+  transform-origin: center bottom;
+  transition: transform 1100ms var(--ease-expo);
+  transition-delay: calc(var(--i, 0) * 160ms);
+}
+[data-on="false"] .fig-col {
+  transform: scaleY(0.08);
+}
+
+/* Design-system panel: a theme change sweeping across 60 screens */
+@keyframes theme-sweep {
+  0%,
+  35% {
+    background-color: #f2f2f7;
+  }
+  50%,
+  85% {
+    background-color: #3a3a44;
+  }
+  100% {
+    background-color: #f2f2f7;
+  }
+}
+[data-on="true"] .screen-tile {
+  animation: theme-sweep 6s var(--ease-expo) infinite;
+  animation-delay: calc(var(--d) * 110ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
   }
 }
